@@ -1,0 +1,67 @@
+make clean; make;
+
+#RUN1
+#rm ../../Data/3/timing_RUN1.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN1.txt ../rootFileList/rootFileListCRT_RUN1.txt ../../Data/3/timing_RUN1.root | tee ../../Data/3/timing_RUN1.log
+
+#rm ../../Data/3/mergedTest_RUN1.log
+#./mergeApp 2 ../rootFileList/rootFileListUSB_RUN1.txt ../rootFileList/rootFileListCRT_RUN1.txt ../../Data/3/timing_RUN1.root ../../Data/3/mergedTest_RUN1.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/mergedTest_RUN1.log
+
+#rm ../../Data/3/merged_RUN1.log
+#./mergeApp 0 ../rootFileList/rootFileListUSB_RUN1.txt ../rootFileList/rootFileListCRT_RUN1.txt ../../Data/3/timing_RUN1.root ../../Data/3/merged_RUN1.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_RUN1.log
+
+
+#RUN2
+#rm ../../Data/3/timing_RUN2.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN2.txt ../rootFileList/rootFileListCRT_RUN2.txt ../../Data/3/timing_RUN2.root | tee ../../Data/3/timing_RUN2.log
+
+#rm ../../Data/3/mergedTest_RUN2.log
+#./mergeApp 2 ../rootFileList/rootFileListUSB_RUN2.txt ../rootFileList/rootFileListCRT_RUN2.txt ../../Data/3/timing_RUN2.root ../../Data/3/mergedTest_RUN2.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/mergedTest_RUN2.log
+
+#rm ../../Data/3/merged_RUN2.log
+#./mergeApp 0 ../rootFileList/rootFileListUSB_RUN2.txt ../rootFileList/rootFileListCRT_RUN2.txt ../../Data/3/timing_RUN2.root ../../Data/3/merged_RUN2.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_RUN2.log
+	    
+
+#RUN3
+#rm ../../Data/3/timing_RUN3.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN3.txt ../rootFileList/rootFileListCRT_RUN3.txt ../../Data/3/timing_RUN3.root | tee ../../Data/3/timing_RUN3.log
+
+#rm ../../Data/3/mergedTest_RUN3.log
+#./mergeApp 2 ../rootFileList/rootFileListUSB_RUN3.txt ../rootFileList/rootFileListCRT_RUN3.txt ../../Data/3/timing_RUN3.root ../../Data/3/mergedTest_RUN3.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/mergedTest_RUN3.log
+
+#rm ../../Data/3/merged_RUN3.log
+#./mergeApp 0 ../rootFileList/rootFileListUSB_RUN3.txt ../rootFileList/rootFileListCRT_RUN3.txt ../../Data/3/timing_RUN3.root ../../Data/3/merged_RUN3.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_RUN3.log
+
+
+#RUN4
+#rm ../../Data/3/timing_RUN4.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN4.txt ../rootFileList/rootFileListCRT_RUN4.txt ../../Data/3/timing_RUN4.root | tee ../../Data/3/timing_RUN4.log
+
+#rm ../../Data/3/mergedTest_RUN4.log
+#./mergeApp 2 ../rootFileList/rootFileListUSB_RUN4.txt ../rootFileList/rootFileListCRT_RUN4.txt ../../Data/3/timing_RUN4.root ../../Data/3/mergedTest_RUN4.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/mergedTest_RUN4.log
+
+#rm ../../Data/3/merged_RUN4.log
+#./mergeApp 0 ../rootFileList/rootFileListUSB_RUN4.txt ../rootFileList/rootFileListCRT_RUN4.txt ../../Data/3/timing_RUN4.root ../../Data/3/merged_RUN4.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_RUN4.log
+
+#laser
+# additional changes in the code are needed
+#rm ../../Data/3/timing_laser.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_laser.txt ../rootFileList/rootFileListCRT_RUN3.txt ../../Data/3/timing_laser.root | tee ../../Data/3/timing_laser.log
+
+#rm ../../Data/3/merged_laser.log
+#./mergeApp 0 ../rootFileList/rootFileListUSB_laser.txt ../rootFileList/rootFileListCRT_RUN3.txt ../../Data/3/timing_laser.root ../../Data/3/merged_laser.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_laser.log
+
+
+#RUN5
+#rm ../../Data/3/timing_RUN5.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN5.txt ../rootFileList/rootFileListCRT_RUN5.txt ../../Data/3/timing_RUN5.root | tee ../../Data/3/timing_RUN5.log
+
+#rm ../../Data/3/mergedTest_RUN5.log
+#./mergeApp 2 ../rootFileList/rootFileListUSB_RUN5.txt ../rootFileList/rootFileListCRT_RUN5.txt ../../Data/3/timing_RUN5.root ../../Data/3/mergedTest_RUN5.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/mergedTest_RUN5.log
+
+rm ../../Data/3/merged_RUN5.log
+./mergeApp 0 ../rootFileList/rootFileListUSB_RUN5.txt ../rootFileList/rootFileListCRT_RUN5.txt ../../Data/3/timing_RUN5.root ../../Data/3/merged_RUN5.root 5 30 -10 0.8 0.5 6 | tee ../../Data/3/merged_RUN5.log
+
+#RUN6
+#rm ../../Data/3/timing_RUN6.log
+#./mergeApp 1 ../rootFileList/rootFileListUSB_RUN6.txt ../rootFileList/rootFileListCRT_RUN6.txt ../../Data/3/timing_RUN6.root | tee ../../Data/3/timing_RUN6.log

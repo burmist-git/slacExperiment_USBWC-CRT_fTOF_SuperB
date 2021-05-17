@@ -1,0 +1,16 @@
+Sequence of jobs:
+-----------------
+
+[The embedded loops should be the same in all scripts. This will
+ensure that all sets of parameters are processed along the chain of jobs]
+
+1) testLoop in /afs/in2p3.fr/home/n/narnaud/FTOF/fTOF_2DMaps/trunk/
+[1 job takes ~hours to be completed]
+
+2) produce2DMaps in /afs/in2p3.fr/home/n/narnaud/FTOF/fTOF_2DMaps/trunk/ana_sel
+[jobs are quite fast: a few minutes at most]
+
+3) analyze2DMaps in /afs/in2p3.fr/home/n/narnaud/FTOF/fTOF_2DMaps/trunk/ana_sel
+[That's where to start if one just wants to inject different amounts of bkg]
+
+4) analyzeReco in /afs/in2p3.fr/home/n/narnaud/FTOF/fTOF_2DMaps/trunk/ana_sel

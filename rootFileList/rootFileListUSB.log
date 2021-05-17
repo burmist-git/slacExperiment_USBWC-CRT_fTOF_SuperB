@@ -1,0 +1,120 @@
+/////RUN1////
+001 20101004     
+002 20101005
+003 20101010
+004 20101019
+005 20101020
+006 20101025
+007 20101101
+008 20101102
+/////////////
+
+/////RUN2////
+009 20101207
+010 20101208
+/////////////
+
+/////RUN3////
+011 20110106
+012 20110111
+013 20110113
+014 20110121
+/////////////
+
+////Tests//////
+015 20110124
+016 20110125
+017 20110126_1
+018 20110126_2
+019 20110126_3
+020 20110126_4
+021 20110127_1
+022 20110127_2
+///////////////
+
+/////RUN4////
+023 20110128_2
+024 20110201
+025 20110204
+026 20110207
+/////////////
+
+
+
+
+//----------------------SLAC---------------------------------------
+/////RUN1////
+119M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101004
+556M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101005
+1.1G	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101010
+165M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101019
+388M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101020
+838M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101025
+53M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101101
+9.8G	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101102
+/////////////
+
+/////RUN2////
+210M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101207
+3.9G	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101208
+802M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110106
+136M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110111
+837M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110113
+310M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110121
+73M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110124
+105M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110125
+/////////////
+
+////Tests//////
+17M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110126_1
+15M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110126_2
+16M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110126_3
+63M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110126_4
+///////////////
+
+/////RUN3////
+54M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110127_1
+62M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110127_2
+477M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110128_2
+221M	/nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20110201
+/////////////
+//--------------07022011--------
+
+
+//-------------------LAPTOP------------------
+/////RUN1////
+119M	20101004
+556M	20101005
+1.1G	20101010
+109M	20101019
+388M	20101020
+839M	20101025
+34M	20101101
+3.9G	20101102
+/////////////
+
+/////RUN2////
+210M	20101207
+3.5G	20101208
+656M	20110106
+137M	20110111
+837M 	20110113
+310M	20110121
+73M	20110124
+105M	20110125
+////////////
+
+////Tests//////
+17M	20110126_1
+15M	20110126_2
+16M	20110126_3
+56M	20110126_4
+///////////////
+
+/////RUN3////
+54M	20110127_1
+62M	20110127_2
+324M	20110128_2
+222M	20110201
+/////////////
+//--------------07022011--------

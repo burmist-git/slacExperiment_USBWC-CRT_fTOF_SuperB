@@ -1,0 +1,455 @@
+On this machine the G4SYSTEM=Linux-g++
+On this machine the G4INSTALL=/usr/local/geant4/geant4.9.2.p02-gcc-4.1.2
+On this machine the G4INCLUDE=/usr/local/geant4/geant4.9.2.p02-gcc-4.1.2/include
+On this machine the G4LIB=/usr/local/geant4/geant4.9.2.p02-gcc-4.1.2/lib
+On this machine the G4LEVELGAMMADATA=/usr/local/geant4/PhotonEvaporation
+On this machine the G4RADIOACTIVEDATA=/usr/local/geant4/RadioactiveDecay
+On this machine the G4LEDATA=/usr/local/geant4/G4EMLOW
+On this machine the G4NEUTRONHPDATA=/usr/local/geant4/G4NDL
+On this machine the G4ABLADATA=/usr/local/geant4/G4ABLA
+On this machine the CLHEP_BASE_DIR=/usr/local/lhcxx/CLHEP/2.0.4.2
+On this machine the CLHEP_INCLUDE_DIR=/usr/local/lhcxx/CLHEP/2.0.4.2/include
+On this machine the CLHEP_LIB_DIR=/usr/local/lhcxx/CLHEP/2.0.4.2/lib
+On this machine the CLHEP_LIB=CLHEP
+On this machine the G4ANALYSIS_USE=1
+On this machine the G4UI_USE_TCSH=1
+On this machine the G4UI_BUILD_XM_SESSION=1
+On this machine the G4UI_USE_XM=1
+On this machine the G4VIS_BUILD_DAWN_DRIVER=1
+On this machine the G4VIS_BUILD_OPENGLX_DRIVER=1
+On this machine the G4VIS_BUILD_RAYTRACERX_DRIVER=1
+On this machine the G4VIS_USE_DAWN=1
+On this machine the G4VIS_USE_OPENGLX=1
+On this machine the G4VIS_USE_RAYTRACERX=1
+On this machine the XMFLAGS=
+On this machine the XMLIBS= -lXm -lXpm 
+On this machine the XMFLAGS=
+On this machine the XMLIBS= -lXm -lXpm 
+On this machine the XAWFLAGS=
+On this machine the XAWLIBS=
+On this machine the G4LIB_BUILD_GDML=1
+On this machine the XERCESCROOT=/usr/local/geant4/xerces-c-src_2_8_0/
+On this machine the G4LIB_BUILD_ZLIB=1
+On this machine the G4LIB_BUILD_SHARED=1
+On this machine the G4LIB_BUILD_STATIC=1
+In your environment you have the G4WORKDIR=/afs/in2p3.fr/home/n/narnaud/geant4
+
+LD_LIBRARY_PATH is set to include CLHEP and Geant4 libraries. 
+
+NOTE : verify that the correct path for the CLHEP library
+- $CLHEP_BASE_DIR/lib - is included in the $LD_LIBRARY_PATH
+variable in your environment, and no other outdated installations
+of CLHEP are by chance referenced through $LD_LIBRARY_PATH and
+present in your system !
+
+Momentum = 1000
+Theta = 20
+Phi = -10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_-10_1.log
+jobName = g4-kaon+_1000_20_-10_1
+jobSeed = 123456
+job g4-kaon+_1000_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:45 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_-10_2.log
+jobName = g4-kaon+_1000_20_-10_2
+jobSeed = 654321
+job g4-kaon+_1000_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:45 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_-10_1.log
+jobName = g4-pi+_1000_20_-10_1
+jobSeed = 123456
+job g4-pi+_1000_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:45 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_-10_2.log
+jobName = g4-pi+_1000_20_-10_2
+jobSeed = 654321
+job g4-pi+_1000_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:46 
+
+Phi = -5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_-5_1.log
+jobName = g4-kaon+_1000_20_-5_1
+jobSeed = 123456
+job g4-kaon+_1000_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:46 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_-5_2.log
+jobName = g4-kaon+_1000_20_-5_2
+jobSeed = 654321
+job g4-kaon+_1000_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:46 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_-5_1.log
+jobName = g4-pi+_1000_20_-5_1
+jobSeed = 123456
+job g4-pi+_1000_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:47 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_-5_2.log
+jobName = g4-pi+_1000_20_-5_2
+jobSeed = 654321
+job g4-pi+_1000_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:47 
+
+Phi = 0
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_0_1.log
+jobName = g4-kaon+_1000_20_0_1
+jobSeed = 123456
+job g4-kaon+_1000_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:48 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_0_2.log
+jobName = g4-kaon+_1000_20_0_2
+jobSeed = 654321
+job g4-kaon+_1000_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:48 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_0_1.log
+jobName = g4-pi+_1000_20_0_1
+jobSeed = 123456
+job g4-pi+_1000_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:48 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_0_2.log
+jobName = g4-pi+_1000_20_0_2
+jobSeed = 654321
+job g4-pi+_1000_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:49 
+
+Phi = 5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_5_1.log
+jobName = g4-kaon+_1000_20_5_1
+jobSeed = 123456
+job g4-kaon+_1000_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:49 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_5_2.log
+jobName = g4-kaon+_1000_20_5_2
+jobSeed = 654321
+job g4-kaon+_1000_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:49 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_5_1.log
+jobName = g4-pi+_1000_20_5_1
+jobSeed = 123456
+job g4-pi+_1000_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:50 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_5_2.log
+jobName = g4-pi+_1000_20_5_2
+jobSeed = 654321
+job g4-pi+_1000_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:50 
+
+Phi = 10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_10_1.log
+jobName = g4-kaon+_1000_20_10_1
+jobSeed = 123456
+job g4-kaon+_1000_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:50 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1000_20_10_2.log
+jobName = g4-kaon+_1000_20_10_2
+jobSeed = 654321
+job g4-kaon+_1000_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:51 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_10_1.log
+jobName = g4-pi+_1000_20_10_1
+jobSeed = 123456
+job g4-pi+_1000_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:51 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1000_20_10_2.log
+jobName = g4-pi+_1000_20_10_2
+jobSeed = 654321
+job g4-pi+_1000_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:52 
+
+Momentum = 1500
+Theta = 20
+Phi = -10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_-10_1.log
+jobName = g4-kaon+_1500_20_-10_1
+jobSeed = 123456
+job g4-kaon+_1500_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:52 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_-10_2.log
+jobName = g4-kaon+_1500_20_-10_2
+jobSeed = 654321
+job g4-kaon+_1500_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:52 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_-10_1.log
+jobName = g4-pi+_1500_20_-10_1
+jobSeed = 123456
+job g4-pi+_1500_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:53 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_-10_2.log
+jobName = g4-pi+_1500_20_-10_2
+jobSeed = 654321
+job g4-pi+_1500_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:53 
+
+Phi = -5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_-5_1.log
+jobName = g4-kaon+_1500_20_-5_1
+jobSeed = 123456
+job g4-kaon+_1500_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:54 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_-5_2.log
+jobName = g4-kaon+_1500_20_-5_2
+jobSeed = 654321
+job g4-kaon+_1500_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:54 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_-5_1.log
+jobName = g4-pi+_1500_20_-5_1
+jobSeed = 123456
+job g4-pi+_1500_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:54 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_-5_2.log
+jobName = g4-pi+_1500_20_-5_2
+jobSeed = 654321
+job g4-pi+_1500_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:55 
+
+Phi = 0
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_0_1.log
+jobName = g4-kaon+_1500_20_0_1
+jobSeed = 123456
+job g4-kaon+_1500_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:55 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_0_2.log
+jobName = g4-kaon+_1500_20_0_2
+jobSeed = 654321
+job g4-kaon+_1500_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:55 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_0_1.log
+jobName = g4-pi+_1500_20_0_1
+jobSeed = 123456
+job g4-pi+_1500_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:56 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_0_2.log
+jobName = g4-pi+_1500_20_0_2
+jobSeed = 654321
+job g4-pi+_1500_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:56 
+
+Phi = 5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_5_1.log
+jobName = g4-kaon+_1500_20_5_1
+jobSeed = 123456
+job g4-kaon+_1500_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:57 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_5_2.log
+jobName = g4-kaon+_1500_20_5_2
+jobSeed = 654321
+job g4-kaon+_1500_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:57 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_5_1.log
+jobName = g4-pi+_1500_20_5_1
+jobSeed = 123456
+job g4-pi+_1500_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:57 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_5_2.log
+jobName = g4-pi+_1500_20_5_2
+jobSeed = 654321
+job g4-pi+_1500_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:58 
+
+Phi = 10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_10_1.log
+jobName = g4-kaon+_1500_20_10_1
+jobSeed = 123456
+job g4-kaon+_1500_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:58 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_1500_20_10_2.log
+jobName = g4-kaon+_1500_20_10_2
+jobSeed = 654321
+job g4-kaon+_1500_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:58 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_10_1.log
+jobName = g4-pi+_1500_20_10_1
+jobSeed = 123456
+job g4-pi+_1500_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:29:59 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_1500_20_10_2.log
+jobName = g4-pi+_1500_20_10_2
+jobSeed = 654321
+job g4-pi+_1500_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:29:59 
+
+Momentum = 2000
+Theta = 20
+Phi = -10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_-10_1.log
+jobName = g4-kaon+_2000_20_-10_1
+jobSeed = 123456
+job g4-kaon+_2000_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:00 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_-10_2.log
+jobName = g4-kaon+_2000_20_-10_2
+jobSeed = 654321
+job g4-kaon+_2000_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:00 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_-10_1.log
+jobName = g4-pi+_2000_20_-10_1
+jobSeed = 123456
+job g4-pi+_2000_20_-10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:00 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_-10_2.log
+jobName = g4-pi+_2000_20_-10_2
+jobSeed = 654321
+job g4-pi+_2000_20_-10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:01 
+
+Phi = -5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_-5_1.log
+jobName = g4-kaon+_2000_20_-5_1
+jobSeed = 123456
+job g4-kaon+_2000_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:01 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_-5_2.log
+jobName = g4-kaon+_2000_20_-5_2
+jobSeed = 654321
+job g4-kaon+_2000_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:01 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_-5_1.log
+jobName = g4-pi+_2000_20_-5_1
+jobSeed = 123456
+job g4-pi+_2000_20_-5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:02 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_-5_2.log
+jobName = g4-pi+_2000_20_-5_2
+jobSeed = 654321
+job g4-pi+_2000_20_-5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:02 
+
+Phi = 0
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_0_1.log
+jobName = g4-kaon+_2000_20_0_1
+jobSeed = 123456
+job g4-kaon+_2000_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:03 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_0_2.log
+jobName = g4-kaon+_2000_20_0_2
+jobSeed = 654321
+job g4-kaon+_2000_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:03 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_0_1.log
+jobName = g4-pi+_2000_20_0_1
+jobSeed = 123456
+job g4-pi+_2000_20_0_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:03 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_0_2.log
+jobName = g4-pi+_2000_20_0_2
+jobSeed = 654321
+job g4-pi+_2000_20_0_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:04 
+
+Phi = 5
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_5_1.log
+jobName = g4-kaon+_2000_20_5_1
+jobSeed = 123456
+job g4-kaon+_2000_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:04 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_5_2.log
+jobName = g4-kaon+_2000_20_5_2
+jobSeed = 654321
+job g4-kaon+_2000_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:05 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_5_1.log
+jobName = g4-pi+_2000_20_5_1
+jobSeed = 123456
+job g4-pi+_2000_20_5_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:05 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_5_2.log
+jobName = g4-pi+_2000_20_5_2
+jobSeed = 654321
+job g4-pi+_2000_20_5_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:05 
+
+Phi = 10
+particle = kaon+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_10_1.log
+jobName = g4-kaon+_2000_20_10_1
+jobSeed = 123456
+job g4-kaon+_2000_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:06 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-kaon+_2000_20_10_2.log
+jobName = g4-kaon+_2000_20_10_2
+jobSeed = 654321
+job g4-kaon+_2000_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:06 
+
+particle = pi+
+number = 1
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_10_1.log
+jobName = g4-pi+_2000_20_10_1
+jobSeed = 123456
+job g4-pi+_2000_20_10_1 submitted to anastasie cluster with submit time = 08/07/2010-16:30:06 
+
+number = 2
+logFile = /sps/superb/narnaud/FTOF/2DMaps/Log/g4-pi+_2000_20_10_2.log
+jobName = g4-pi+_2000_20_10_2
+jobSeed = 654321
+job g4-pi+_2000_20_10_2 submitted to anastasie cluster with submit time = 08/07/2010-16:30:07 
+

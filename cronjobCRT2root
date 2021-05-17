@@ -1,0 +1,139 @@
+#!/bin/csh
+
+set rawDataDir  = "/u3/CRT_DST/exp3"
+set rootDataDir = "/nfs/farm/g/superb/u02/crt/crtDataConvertedToRoot"
+set underscore  = "_"
+
+cd /afs/slac.stanford.edu/u/br/narnaud/SuperB/FTOF/CRT/experiment
+
+if( ! -e crtFilesWithLessThan1000Events.txt ) then
+  touch crtFilesWithLessThan1000Events.txt
+endif
+
+set currentDir = `pwd`
+#echo "currentDir = $currentDir"
+
+#set crtRunName = "run15"
+#set crtRunName = "run16"
+#set crtRunName = "run17"
+#set crtRunName = "run18"
+#set crtRunName = "run19"
+#set crtRunName = "run20"
+set crtRunName = "run21"
+
+set lastFileRead = -1
+if( -e cronjobLastCRTFileConverted.txt ) then
+  set lastFileRead = `cat cronjobLastCRTFileConverted.txt`
+endif
+set lastFileRead = `expr $lastFileRead + 0`
+
+if( $lastFileRead < 10 ) then
+  set lastFileReadString = "0000$lastFileRead"
+  else if( $lastFileRead < 100 ) then
+    set lastFileReadString = "000$lastFileRead"
+    else if( $lastFileRead < 1000 ) then
+      set lastFileReadString = "00$lastFileRead"
+      else if( $lastFileRead < 10000 ) then
+        set lastFileReadString = "0$lastFileRead"
+      endif
+    endif
+  endif
+endif
+#set lastFileReadString = $lastFileRead
+
+echo "Last CRT file processed for run $crtRunName had index $lastFileReadString"
+echo "=> Checking if new ones are available"
+
+cd $rawDataDir
+
+if( ! -d $crtRunName ) then
+  echo "CRT directory $crtRunName does not exist in area $rawDataDir"
+  echo "=> Exiting the script"
+  exit
+endif
+
+cd $crtRunName
+
+# Ignore the most recent file as its transfer may have been incomplete
+#set newestFile = `ls -1 *.dst2 | awk -F "." '{ print $1}' | awk -F "_" '{ print $NF " " $0 }' | sort -n | tail -n 1 | awk '{print $1}'`
+set newestFile = `ls -1 *.dst2 | awk -F "." '{ print $1}' | awk -F "_" '{ print $NF " " $0 }' | sort -n | tail -n 2 | head -n 1 | awk '{print $1}'`
+set newestFile = `expr $newestFile + 0`
+
+if( $newestFile < 10 ) then
+  set newestFileString = "0000$newestFile"
+  else if( $newestFile < 100 ) then
+    set newestFileString = "000$newestFile"
+    else if( $newestFile < 1000 ) then
+      set newestFileString = "00$newestFile"
+      else if( $newestFile < 10000 ) then
+        set newestFileString = "0$newestFile"
+      endif
+    endif
+  endif
+endif
+#set newestFileString = $newestFile
+
+echo "Newest CRT file available for run $crtRunName has index $newestFileString"
+if( $newestFile == $lastFileRead ) then
+  echo "No new CRT file to process => exiting the script"
+  exit
+endif
+
+if( $newestFile < $lastFileRead ) then
+  echo "*** PROBLEM: the newest file has an index lower than the last processed file => check what's going wrong ***"
+  exit
+endif
+
+set firstToProcess = `expr $lastFileRead + 1`
+
+if( $firstToProcess < 10 ) then
+  set firstToProcessString = "0000$firstToProcess"
+  else if( $firstToProcess < 100 ) then
+    set firstToProcessString = "000$firstToProcess"
+    else if( $firstToProcess < 1000 ) then
+      set firstToProcessString = "00$firstToProcess"
+      else if( $firstToProcess < 10000 ) then
+        set firstToProcessString = "0$firstToProcess"
+      endif
+    endif
+  endif
+endif
+
+echo "=> Processing CRT files with indexes between $firstToProcessString and $newestFileString"
+
+cd $currentDir
+
+set rootFile = $rootDataDir/$crtRunName/CRT_$crtRunName$underscore$firstToProcessString-$newestFileString.root
+
+#set mailBody = "Hi Leonid & Nicolas,\nFiles $firstToProcessString to $newestFileString from CRT $crtRunName have just been processed.\nThe output ROOT file is $rootFile"
+
+set checks = checksCRT$underscore$crtRunName$underscore$firstToProcessString-$newestFileString.pdf
+
+set mailBody = "Hi Leonid & Nicolas,\nFiles $firstToProcessString to $newestFileString from CRT $crtRunName have just been processed.\nThe output ROOT file is $rootFile\nChecks have been run on these data; the output pdf is available at http://www.slac.stanford.edu/~narnaud/SuperB/Pid/CRT/$checks"
+
+set firstToProcess = `expr $firstToProcess + 0`
+set newestFile     = `expr $newestFile + 0`
+source convertCRT2root.csh $crtRunName $firstToProcess $newestFile
+if( -e cronjobLastCRTFileConverted.txt ) then
+  mv cronjobLastCRTFileConverted.txt cronjobLastCRTFileConverted.txt.old
+endif
+echo $newestFile >! cronjobLastCRTFileConverted.txt
+
+cd mergeCRTandUSB
+
+# Leonid only wants the ROOT file just processed to be checked
+# [and not the whole run]
+#echo $rootFile >> crtRootFilesForChecks.txt
+echo $rootFile >! crtRootFilesForChecks.txt
+
+crtDataTestApp 0 crtRootFilesForChecks.txt checks |& tee checks.log
+ps2pdf checks.ps
+#set targetFileName = "/afs/slac.stanford.edu/u/br/narnaud/public_html/SuperB/Pid/CRT/checksCRT.pdf"
+#( -e $targetFileName ) then
+#  mv $targetFileName $targetFileName.old
+#endif
+set targetFileName = "/afs/slac.stanford.edu/u/br/narnaud/public_html/SuperB/Pid/CRT/$checks"
+cp checks.pdf $targetFileName 
+chmod g+w $targetFileName 
+
+echo "$mailBody" | mail -s "New CRT DST2 files converted to ROOT" narnaud@lal.in2p3.fr,burmist@lal.in2p3.fr

@@ -1,0 +1,128 @@
+Contents of the package:
+------------------------
+
+* README  
+
+  - This file 
+
+* Makefile  
+
+  - Make sure that ROOTCFLAGS, ROOTLIBS and ROOTGLIBS
+    are properly set -- see the first lines of the file:
+    |root-config| needs to be properly found
+
+  - Produces 3 executables:
+
+    / convertCRT2rootApp
+      o Convert dst2 ASCII files containing CRT data
+        to a ROOT ntuple.
+      o Compiled from convertCRT2root.cc 
+      o Uses 3 arguments:
+        <the name of a text file containing the list of dst2 files to be converted to ROOT>
+        <the path of the directory containing the input dst2 files>
+        <the name of the output ROOT file>
+      o Currently the CRT data are located in the directory /u3/CRT_DST/exp3
+        of the klong machine. This machine must be used to run convertCRT2root.
+      o The dst2 input files are assumed to be ordered by increasing time
+      o Example of use:
+	convertCRT2rootApp test_dataFileListCRT.txt /u3/CRT_DST/exp3/run16 test_convertCRT.root
+      o The script |convertCRT2root.csh| aims at making this processing 
+        simpler. It requires 3 (or 4) arguments
+        - the name <name> of the directory in which the DST2 input files 
+          are located. The script assumes that this directory is located in
+          /u3/CRT_DST/exp3/ and puts the output file in the directory
+          /nfs/farm/g/superb/u02/crt/crtDataConvertedToRoot/<name>, creating
+          it if needed. If a ROOT file name with the same name is already
+          present, it is renamed with a ".old" additional extension.
+        - <first>: the number of the first file to process [e.g. 00036]
+        - <last>: the number of the last file to process [e.g. 00462]
+        => the name of the output ROOT file is constructed using these 3
+           arguments:CRT_<name>_<first>-<last>.root
+      [ - a specific name for the output ROOT file, should the default
+          choice explained above be not convenient. ] 
+
+    / convertUSBWC2rootApp
+      o Convert USBWC ASCII data files to a ROOT ntuple.
+      o Compiled from convertUSBWC2root.cc
+      o Uses 3 arguments:
+        <the name of a text file containing the list of USBWC files to be converted to ROOT>
+        <the path of the directory containing the input USBWC files>
+        <the name of the output ROOT file>
+      o Currently the USBWC ASCII data files are located in 
+        /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RawData
+      o The USBWC input files should be ordered by increasing time
+      o Example of use:
+        convertUSBWC2rootApp list.tmp /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RawData/20101025 /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/20101025/20101025.root
+      o The script |convertUSBWC2root.csh| aims at making this processing
+        simpler. It requires a single mandatory argument: the name <name>
+        of the directory in which the USBWC input data files are located.
+        It assumes that this directory is located in 
+        /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RawData
+        and puts the output root file USBWC_<name>.root in the directory
+        /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RootData/<name>, creating
+        it if needed. If a file USBWC_<name>.root is already present, the
+        script renames it in USBWC_<name>.root.old. In the directory where
+        the script runs, list.tmp shows the list of input files used and
+        convertUSBWC2root.log stores the log of the script execution.
+        To choose the name of the output ROOT file, just add it as 
+        second argument.
+   
+    / mergeDataFilesUSBApp
+      o Merge ASCII files produced by the USBWC DAQ software
+        => only useful to decrease the number of ASCII files
+           from a given USBWC run -- no data formating nor processing.
+      o Compiled from mergeDataFilesUSB.cc
+      o Uses 3 arguments: 
+        <generic name of the files to be merged>
+        <number of files to be merged>
+        <name of the output file>
+      o Convention: if toto.dat is the generic name of the files
+        to be merged and N the total number of these files, their
+        names should be: toto.dat, toto.dat_1, toto.dat_2, ...,
+        toto.dat_<N-1>
+      o Example of use:
+        mergeDataFilesUSBApp /nfs/farm/g/superb/u02/crt/usbWaveCatcher/RawData/20101025/20101025.dat 9 test.dat
+
+* convertCRT2root.csh
+  - Script developped to make straightforward the conversion of the CRT DST2
+    files to ROOT. See the convertCRT2rootApp section above for details.
+
+* cronjobCRT2root
+  - Cron job run automatically on the klong machine twice a day to process
+    automatically the new DST2 CRT ASCII files. It relies on the script
+    convertCRT2root.csh described above. The trscrontab syntax is the
+    following:
+    klong;60 00 03,14 * * * /afs/slac.stanford.edu/u/br/narnaud/SuperB/FTOF/CRT/experiment/cronjobCRT2root > /afs/slac.stanford.edu/u/br/narnaud/SuperB/FTOF/CRT/experiment/cronjobCRT2root.log 2>&1
+
+* convertUSBWC2root.csh
+  - Script developped to make straightforward the conversion of the USBWC ASCII
+    files to ROOT. See the convertUSBWC2rootApp section above for details.
+
+* convertCRT2root.cc 
+  convertUSBWC2root.cc  
+  mergeDataFilesUSB.cc
+
+  - The C++ files used to produce the three executables described above.
+
+* dataFileListCRT.txt  
+  rootFileListUSBWC.txt  
+  dataFileListUSBWC.txt  
+
+  - Examples of files listing CRT and USBWC input files
+
+* Code to visualize USBWC events
+
+  - Class and methods associated:
+    vis.h  
+    vis.C  
+
+  - Example showing how to use this class:
+    run_vis.C  
+
+* Directory ana_ftofProt/
+
+  - See README file in the directory
+
+* Directory mergeCRTandUSB/  
+
+  - See REAME file in the directory
